@@ -1,0 +1,26 @@
+<!DOCTYPE>
+<html lang="pt">
+  <head>
+    <meta  charset="UTF8">
+    <title>Pagina pix</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+      function alterarNome(event) {
+        if (event.keyCode == 13) {
+          document.getElementById("nome").innerHTML = event.target.value;
+          window.location.href = "https://www.google.com";
+        }
+      }
+    </script>
+  </head>
+  <body>
+   <main>
+     <h1>Bem vindo</h1>
+     <h3 id="nome">Adenilson</h3>
+     <img src="perfil.jpg" alt="pefil">
+     <p> </p>
+     <input type="text" placeholder="Qual seu nome?" onkeydown="alterarNome(event)">
+    <!--  <button>Contato</button> -->
+   </main>
+  </body>
+</html>
